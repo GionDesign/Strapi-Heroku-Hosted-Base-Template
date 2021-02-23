@@ -54,6 +54,17 @@ If it's just in Heroku that Content Types are made, then they are not stored in 
   - DATABASE_PASSWORD
   - DATABASE_PORT
 
+## To Run locally
+In order to run locally you need to:
+- clone repo
+- create the `.env` file in the main directory as mentioned above
+- populate the required database fields
+- populate the required cloudinary fields
+- run `yarn install` to build modules
+- run `yarn develop` to start the local server
+  - ***if the database credentials are not configured there will be a build error**
+  - ***if cloudinary credentials are not configured there will be no media content and will cause an error**
+
 ## UPDATE:
 - (24/02/2021) Updated to Strapi v 3.5.0
   - This new version also includes Sentry Plugin usage
